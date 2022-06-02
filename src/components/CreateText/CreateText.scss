@@ -1,0 +1,90 @@
+@import '../../assets/sass/main.scss';
+
+
+.createModal {
+    @include between;
+    flex-direction: column;
+    padding: 18px;
+    background-color: $white-color;
+    box-shadow: 0 200px 200px 0 rgba(253, 250, 250, 0.788);
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__inputText {
+        width: 400px;
+        padding: 10px;
+        font-size: 15px;
+        color: $gray-color;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgb(153, 153, 153);
+    }
+    &__inputText::placeholder {
+        font-size: 16px;
+        color: $gray-color;
+    }
+
+    &__form {
+        padding-bottom: 20px;
+    }
+
+    &__count {
+        @include d-flex;
+        justify-content: flex-end;
+        font-size: 13px;
+        color: rgb(151, 151, 151);
+    }
+
+    &__inputDesc {
+        border: none;
+        color: $primary-green;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__btnss {
+        margin-top: 160px;
+    }
+
+    &__cancel {
+        padding: 7px 16px 9px;
+        color: $primary-color;
+        font-size: 14px;
+        background-color: transparent;
+        border: 1px solid #535353;
+        border-radius: 99em;
+        margin-right: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-color: #000;
+        }
+    }
+
+    &__cansel {
+        padding: 7px 16px 9px;
+        color: $white-color;
+        font-size: 14px;
+        background-color: $primary-green;
+        border: 1px solid  $primary-green;
+        border-radius: 99em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #41c93c;
+        }
+    }
+
+    &__chekkedBox {
+        margin-top: 20px;
+
+        label {
+            font-size: 14px;
+            color: #535353;
+        }
+    }
+}

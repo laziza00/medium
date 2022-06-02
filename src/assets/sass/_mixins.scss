@@ -1,0 +1,66 @@
+@mixin style-none {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+@mixin d-flex {
+    display: flex;
+    align-items: center;
+}
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin title {
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: #C9AC8C;
+}
+@mixin text-little {
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #C9AC8C;
+}
+@mixin  text-littleWhite {
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+@mixin text-Num {
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+@mixin text {
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144.4%;
+    color: rgba(255, 255, 255, 0.8);
+}

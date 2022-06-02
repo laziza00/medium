@@ -1,0 +1,70 @@
+@import '../../assets/sass/main.scss';
+
+.stories {
+    width: 100%;
+    @include between;
+    .story {
+        width: 55%;
+        margin: 0 0 0 11%;
+        height: auto;
+        background-color: $white-color;
+        padding: 50px 0;
+
+    &__header {
+        @include between;
+        padding: 20px 0;
+    }
+    &__title {
+        font-size: 44px;
+        color: $primary-color;
+        font-weight: 700;
+    }
+    &__write-btn {
+        background-color: $primary-green !important;
+        margin: 0 7px 0 0;
+    }
+    &__import-btn {
+        border: 1px solid $gray-color !important;
+        color: $primary-color !important;
+    }
+    .btn {
+        color: $white-color;
+        padding: 10px 20px 10px;
+        border-radius: 30px;
+        border: 1px solid $white-color;
+        background-color: transparent;
+
+    }
+    &__list {
+        @include style-none;
+    }
+    &__item {
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(230, 230, 230, 1);;
+    }
+    &__item-title {
+        font-size: 16px;
+        color: $primary-color;
+        font-weight: 900;
+        margin: 0 0 15px 0;
+    }
+    &__month {
+        @include d-flex;
+    }
+    &__text {
+        color: $gray-color;
+        font-size: 19px;
+        font-weight: 700;
+        margin: 0 10px 0 0;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+    }
+    &__btn i{
+       color: $gray-color;
+       font-size: 30px;
+    }
+    }
+
+}

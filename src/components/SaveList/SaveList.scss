@@ -1,0 +1,142 @@
+@import '../../assets/sass/main.scss';
+.box {
+    @include between;
+    width: 100% !important;
+}
+.save {
+    margin: 0 0 0 9% !important;
+    padding: 50px 0;
+    height: auto;
+
+    &__inner {
+        width: 58vw;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    &__title-box {
+        @include between;
+        margin: 0 0 40px 0;
+    }
+    &__title {
+        font-size: 42px;
+        color: $primary-color;
+    }
+    &__btn {
+        background-color: #1a8917;
+        border: none;
+        padding: 9px 20px 9px;
+        font-size: 17px;
+        color: $white-color;
+        border-radius: 20px;
+        margin: 0 15px 0 0;
+    }
+    &__nav {
+        @include d-flex;
+        padding: 15px 0;
+        @include style-none;
+        border-bottom: 1px solid rgb(202, 200, 200);
+    }
+    &__item {
+        color: #757575;
+        font-size: 18px;
+        margin: 0 10px 0 0;
+    }
+    &__main {
+        position: relative;
+        margin: 30px 0 15px 0;
+        @include d-flex;
+        background-color: #1a8917;
+        border-radius: 5px;
+        padding: 40px 30px;
+        overflow: hidden;
+        width: 100% !important;
+    }
+    &__main-box {
+        margin: 0 180px 0 0;
+    }
+    &__main-title {
+        font-size: 24px;
+        color: $white-color;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+    }
+    .list-btn {
+        background-color: $primary-color;
+    }
+    &__circle-btn {
+        background-color: $white-color;
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        font-size: 27px;
+        color: #1a8917;
+        @include center;
+        border: none;
+        outline: 120px solid #44b140;
+    }
+    &__remove-btn {
+        background-color: transparent;
+        color: $white-color;
+        font-size: 24px;
+        border: none;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    &__list {
+        @include style-none;
+        width: 94.5%;
+        margin: 0 auto;
+
+    }
+    &__post-item {
+        position: relative;
+        background-color: $white-color;
+        border: 1px solid rgb(202, 200, 200);
+        border-radius: 5px;
+        @include between;
+        height: 200px;
+        margin: 0 0 15px 0;
+    
+    }
+
+    &__item-title{
+       color: $primary-color;
+       font-size: 25px;
+       font-weight: 700;
+       margin: 0 0 35px 0;
+       width: 70%;
+    }
+    .view-btn {
+        background-color: transparent;
+        border: 1px solid  $primary-color;
+        padding: 7px 12px 6px;
+        color: $primary-color;
+        margin: 0 15px 0 0 ;
+    }
+    &__text {
+        @include d-flex;
+        color: #757575;
+        font-size: 15px;
+        font-weight: 400;
+        
+    }
+    &__text i {
+        margin: 0 0 0 10px;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 200px;
+        width: 166px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    &__post-inner {
+        padding: 40px 30px;
+    }
+
+
+}

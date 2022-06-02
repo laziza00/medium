@@ -1,0 +1,151 @@
+@import '../../assets/sass/main.scss';
+
+.box {
+    width: 100%;
+    @include between;
+}
+.person {
+    width: 65%;
+    @include center;
+    margin: 0 0 0 6%;
+    position: relative;
+    &__inner {
+        position: relative;
+        width: 85%;
+        padding: 60px 0;
+    }
+    &__img-box {
+        @include between;
+        margin: 0 0 30px 0;
+    }
+    &__img-inner {
+        @include d-flex;
+    }
+    &__avatar {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 15px 0 0;
+    }
+    &__name {
+        font-size: 18px;
+        color: $primary-color;
+        margin: 0 0 5px 0;
+    }
+    &__data {
+        color: $gray-color;
+        font-size: 16px;
+        @include d-flex;
+        margin: 0;
+    }
+    &__item-btn {
+        color: $gray-color;
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        @include d-flex;
+        margin: 0 0 0 10px;
+        cursor: pointer;
+    }
+    &__item-btn i{
+        color: $gray-color;
+        font-size: 18px;
+        margin: 0 5px 0 0;
+        cursor: pointer;
+    }
+    &__icons-list {
+        @include style-none;
+        @include between;
+        width: 100%;
+        position: relative;
+    }
+    &__icons {
+        font-size: 24px; color: $gray-color;
+        margin: 0 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 32px;
+        color: $primary-color;
+        margin: 0 0 30px 0;
+    }
+    &__text {
+        font-size: 20px;
+        color: $gray-color;
+        margin: 0 0 40px 0;
+    }
+    &__img {
+        width: 100%;
+        height: 461px;
+        object-fit: cover;
+        margin: 0 0 20px 0;
+    }
+    &__modal {
+        position: absolute;
+        top: 9%;
+        right: -12%;
+        width: 340px;
+        height: 200px;
+        padding: 20px 24px;
+        background-color: $white-color;
+        overflow: hidden;
+        display: none;
+        padding: 15px;
+        border-radius: 5px;
+        z-index: 10;
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+    }
+    &__foot-btns {
+        position: fixed;
+        bottom: 20px;
+        left: 30%;
+        transform: translate();
+        background-color: $white-color;
+        border-radius: 30px;
+        padding: 10px;
+        @include between;
+        width: 255px;
+        padding: 11px 15px;
+        background-color: $white-color;
+        box-shadow: 0 5px 15px 0 rgba(240, 237, 237, 0.616);
+        z-index: 200;
+    }
+    &__foot-list {
+        @include style-none;
+        @include between;
+        width: 80%;
+    }
+    &__foot-item {
+        @include d-flex;
+        width: 50%;
+    }
+    &__foot-btn {
+        background-color: transparent;
+        border: none;
+        margin: 0 15px;
+        cursor: pointer;
+    }
+    &__foot-btn i{
+        font-size: 20px;
+        color: $gray-color;
+        margin: 0;
+    }
+    &__foot-count {
+        font-size: 17px;
+        color: $gray-color;
+        margin: 0;
+    }
+}
+
+.person__absolut {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    background-color: $white-color; 
+}

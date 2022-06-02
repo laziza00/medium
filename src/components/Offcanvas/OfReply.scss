@@ -1,0 +1,138 @@
+@import '../../assets/sass/main.scss';
+
+.ofcanvas {
+  
+        // position: absolute;
+        // width: 200px;
+        // background-color: $white-color;
+        // height: auto;
+        // right: -200px;
+        // top: 400px;
+        // z-index: 2000;
+        // display: none;
+    
+    &__mes-btn {
+        border: none;
+        background-color: transparent;
+    }
+    &__mes-btn i{
+        font-size: 22px;
+        color: $gray-color;
+        margin: 0 10px 0;
+        position: relative;
+    }
+    &__reply {
+        font-size: 15px;
+        color: $primary-color;
+        margin: 0;
+    }
+    &__commit {
+        font-size: 15px;
+        color: $primary-color;
+        margin: 10px 0 20px 0;
+    }
+    &__textarea {
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 10px #ccc;
+        margin: 15px 0 15px 0;
+
+    }
+    &__user {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+    }
+    &__userName {
+        font-size: 14px;
+        color: $primary-color;
+        margin: 0;
+    }
+    
+        &__prof {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }    
+    
+        &__img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        &__name {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            color: #292929;
+        }
+    
+        &__textarea {
+            border: none;
+            outline: none;
+        }
+    
+        &__btnsBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        &__cancel {
+            padding: 7px 16px 9px;
+            color: #292929;
+            font-size: 14px;
+            background-color: transparent;
+            border: none;
+            border-radius: 99em;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+    
+            &:hover {
+                background-color: rgb(199, 199, 199);
+            }
+        }
+    
+        &__Respond {
+            padding: 7px 16px 9px;
+            color: #fff;
+            font-size: 14px;
+            background-color: #1a8917;
+            border: 1px solid transparent;
+            border-radius: 99em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+    
+            &:hover {
+                background-color: #41c93c;
+            }
+        }
+    
+        &__B {
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            font-style: italic;
+            margin-right: 15px;
+        }
+}
+
+.ofBox {
+    position: absolute;
+    width: 200px;
+    background-color: $white-color;
+    height: auto;
+    right: -200px;
+    top: 400px;
+    z-index: 2000;
+    display: block;
+}
+.rightModal {
+    right: 0;
+    display: block;
+}

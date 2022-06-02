@@ -1,0 +1,85 @@
+@import '../../../assets/sass/main.scss';
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: $white-color;
+    border-right: 1px solid rgb(197, 195, 195);
+    &__inner {
+        @include between;
+        flex-direction: column;
+        height: 100%;
+        padding: 40px 0;
+    }
+    &__logo-box {
+        padding: 45px 0 40px 0;
+        margin:  0;
+    }
+    &__logo {
+        width: 45px;
+        height: 26px;
+        object-fit: cover;
+    }
+    &__list {
+        height: 55%;
+        @include style-none;
+        @include between;
+        flex-direction: column;
+        padding: 0;
+    }
+    &__item {
+        @include center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    &__icon {
+        font-size: 20px;
+        font-weight: 0;
+        color: rgba(117, 117, 117, 1);
+        cursor: pointer;
+    }
+    .home-icon {
+        color: black;
+    }
+    .edit-icon {
+        margin: 40px 0 40px 0;
+    }
+    &__btn-box {
+        margin: 40px auto 0 auto;
+        @include center;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    &__item svg{
+        font-size: 25px;
+        color: rgba(117, 117, 117, 1);
+    }
+    &__item i{
+        font-size: 25px;
+        color: rgba(117, 117, 117, 1);
+    }
+
+}
+.active {
+    .bx {
+        color: $primary-color;
+    }
+}
+.active {
+    button {
+        .bx {
+            color: $primary-color;
+            }
+       
+          }
+}

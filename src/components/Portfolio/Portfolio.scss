@@ -1,0 +1,84 @@
+@import '../../assets/sass/main.scss';
+.portfolio {
+    width: 100%;
+    @include between;
+    margin: 0 0 0 4%;
+    &__inner {
+        width: 69%;
+        @include center;
+        padding: 50px 0;
+    }
+    &__main {
+        width: 87%;
+    }
+    &__box {
+        width: 100%;
+    }
+    .save {
+        margin: 0 0 0 0 !important;
+    
+    }
+    &__header {
+        @include between;
+        padding: 25px 0;
+
+    }
+    &__title {
+        font-size: 42px;
+        font-weight: 600;
+        color: #191919;
+    }
+    &__more {
+        background-color: transparent;
+        border: none;
+    }
+    &__more i{
+        font-size: 27px;
+        color: $gray-color;
+    }
+    &__list {
+        @include style-none;
+    }
+    &__item {
+        padding: 30px 0;
+        border-bottom: 1px solid rgb(204, 200, 200);
+    }
+    &__text {
+        font-size: 20px;
+        color: $primary-color;
+        margin: 0 0 40px 0;
+    }
+    &__icons {
+        @include between;
+    }
+    &__social-item {
+        margin: 0 4px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        @include center;
+        padding: 2px 0;
+    }
+    &__socials {
+        @include style-none;
+        @include d-flex;
+    }
+    &__social-item i{
+        color: $white-color;
+        font-size: 18px;
+    }
+    .gray-item {
+        background-color: transparent;
+    }
+    .gray-item i{
+        color: $gray-color;
+        font-size: 23px;
+    }
+    .item i {
+        color: $gray-color;
+        font-size: 23px;
+        margin: 0 20px 0 0;
+    }
+
+}

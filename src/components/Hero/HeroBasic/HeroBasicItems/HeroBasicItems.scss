@@ -1,0 +1,81 @@
+@import '../../../../assets/sass/main.scss';
+
+.herobasic__item {
+    border-bottom: 1px solid #dfdddd;
+    padding: 34px 0 34px 0;
+    text-decoration: none !important;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease
+}
+.herobasic__user-box {
+    @include d-flex;
+    margin: 0 0 20px 0;
+}
+.herobasic__user-box img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+    object-fit: cover;
+}
+.herobasic__name{
+   font-size: 16px;
+   color: $primary-color;
+   font-weight: 500;
+   margin: 0;
+}
+.herobasic__span-name {
+    font-size: 16px;
+    color: #757575;
+    margin: 0 3px;
+}
+.herobasic__title {
+    font-size: 23px;
+    color: $primary-color;
+    margin: 0 0 10px 0;
+    width: 90%;
+    font-weight: 800;
+}
+.herobasic__text {
+    font-size: 18px;
+    color: $primary-color;
+    width: 90%;
+}
+.herobasic__img {
+    width: 142px;
+    height: 142px;
+    border-radius: 3px
+}
+.herobasic__item-footer {
+    @include d-flex;
+    margin: 0 200px 0 0;
+}
+.herobasic__categor-btn{
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 15px;
+    color: $primary-color;
+    margin: 0 6px 0 0;
+    display: block;
+    padding: 4px 9px;
+    border-radius: 15px;
+}
+.herobasic__item-footer p {
+    color: #757575;
+    font-size: 15px;
+    margin: 0 6px 0 0;
+}
+.herobasic__item-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #424141;
+    margin: 0 10px 0;
+    position: relative;
+}
+.herobasic__item-btn i{
+    font-size: 24px;
+    color: #686464;
+    cursor: pointer;
+}

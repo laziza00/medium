@@ -1,0 +1,46 @@
+@import '../../../assets/sass/main.scss';
+
+.modal {
+    position: absolute;
+    top: 95%;
+    right: -100px !important;
+    padding: 24px 20px 16px 24px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: $white-color;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+    z-index: 100;
+    height: auto;
+    // overflow-y: scroll;
+    &__list {
+        list-style-type: none;
+        padding: 5px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__item {
+        @include between;
+        margin: 0 0 10px 0;
+    }
+
+    &__icon i {
+        font-size: 16px;
+        color: #292929;
+        margin:  0;
+    }
+    &__read-text {
+        font-size: 15px;
+        color: $primary-color;
+        margin: 0;
+    }
+    &__btn {
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        color: #1a8917;
+        padding: 20px 0px 4px;
+        cursor: pointer;
+    }
+
+}

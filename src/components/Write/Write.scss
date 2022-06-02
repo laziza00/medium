@@ -1,0 +1,126 @@
+@import '../../assets/sass/main.scss';
+
+.write {
+    background-color: $white-color;
+    padding: 15px 35px;
+    &__header {
+        @include between;
+        margin: 20px 0;
+    }
+    &__logo {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+    }
+    &__email {
+        font-size: 17px;
+        color: #000000ad;
+        font-weight: 400;
+        margin: 0;
+    }
+    &__logo-box {
+        @include d-flex;
+    }
+    &__port {
+        @include d-flex;
+    }
+    &__publish-btn {
+        padding: 3px 10px;
+        background-color: #1a891740;
+        border: none;
+        font-size: 16px;
+        color: $white-color;
+        border-radius: 20px;
+        margin: 0 20px 0 0;
+    }
+    &__more {
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        color: $gray-color;
+        margin: 0 20px 0 0;
+    }
+    &__img-btn {
+        background-color: transparent;
+        border: none;
+    }
+    &__img-btn img{
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+    }
+    &__main {
+        margin: 50px 0;
+        padding: 20px 100px;
+    }
+    &__input {
+        font-size: 40px;
+        font-weight: 700;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #b3b3b1;
+        width: 90%;
+        padding: 20px 40px;
+    }
+    &__input-box {
+        margin: 0 0 15px 0;
+        display: flex;
+    }
+    &__input::placeholder {
+        font-size: 42px;
+        font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+        background-color: transparent;
+        border: none;
+        color: #b3b3b1;
+        margin: 0 0 10px 0;
+    }
+    &__input-btn {
+        background-color: transparent;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #000000ad;
+        line-height: 32px;
+        @include center;
+        padding: 5px 6px;
+        margin: 70px 0 0 0;
+    }
+    &__input-btn i{
+       font-size: 25px;
+       color: #000000ad
+    }
+    &__textarea {
+        font-size: 20px;
+        font-weight: 500;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #b3b3b1;
+        width: 90%;
+        padding: 20px 40px;
+    }
+    &__footer {
+        width: 400px;
+        @include between;
+        margin: 0 auto;
+
+    }
+    &__arrow {
+       background-color: transparent;
+       border: none
+    }
+    &__arrow i{
+        font-size: 40px;
+        color: $primary-color;
+     }
+     &__text {
+         font-size: 16px;
+         color: $primary-color;
+         text-align: center;
+     }
+}

@@ -1,0 +1,235 @@
+@import '../../assets/sass/main.scss';
+.ofcanvas {
+    z-index: 20000;
+    background-color: $white-color;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    right: -480px;
+    width: 420px;
+    transition: all .3s ease;
+    height: 1400px;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+    padding: 24px;
+    
+    &__header {
+        padding:0 0 24px 0;
+        @include between;
+    }
+    &__title {
+        font-size: 22px;
+        color: $primary-color;
+    }
+    &__head-inner {
+        @include d-flex;
+    }
+    &__head-btn {
+        background-color: transparent;
+        border: none;
+    }    
+    &__head-btn:not(:last-child) {
+        margin:0 10px 0 0 ;
+    }
+    &__head-btn i{
+        font-size: 25px;
+        color: $gray-color;
+    }
+
+    .dropdown {
+        background-color: $white-color;
+        outline: none;
+        border: none;
+        margin: 0 0 20px 0;
+    }
+    &__list {
+        @include style-none;
+        border-top: 1px solid rgb(223, 221, 221);
+    }
+    &__item {
+        border-bottom: 1px solid rgb(223, 221, 221);
+        padding: 30px 0;
+    }
+    &__main-inner {
+        @include between;
+    }
+    &__img-box {
+        @include d-flex;
+    }
+    &__img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin: 0 12px 0 0;
+    }
+    &__name {
+        font-size: 16px;
+        color: $primary-color;
+        margin: 0;
+    }
+    &__date {
+        font-size: 15px;
+        color: $gray-color;
+        margin: 0;
+    }
+    &__more {
+        background-color: transparent;
+        border: none;
+    }
+    &__more i{
+        font-size: 18px;
+        color: $gray-color;
+    }
+    &__text {
+        font-size: 23px;
+        color: $primary-color;
+        padding: 20px 16px;
+        border: 1px solid rgb(202, 200, 200);
+        margin: 20px 0 10px 0;
+    }
+    &__text-another {
+        font-size: 15px;
+        color: $primary-color;
+        margin: 0 0 20px 0;
+    }
+    &__read {
+        font-size: 16px;
+        color: $primary-green;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        display: none;
+    }
+    &__item-btns {
+        @include between;
+    }
+    &__clap-btns {
+        @include d-flex;
+    }
+    &__mes-btn {
+        border: none;
+        background-color: transparent;
+    }
+    &__mes-btn i{
+        font-size: 22px;
+        color: $gray-color;
+        margin: 0 10px 0;
+        position: relative;
+    }
+    &__reply {
+        font-size: 15px;
+        color: $primary-color;
+        margin: 0;
+    }
+    &__commit {
+        font-size: 15px;
+        color: $primary-color;
+        margin: 10px 0 20px 0;
+    }
+    &__textarea {
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 10px #ccc;
+        margin: 15px 0 15px 0;
+
+    }
+    &__user {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin: 0 10px 0 0;
+    }
+    &__userName {
+        font-size: 14px;
+        color: $primary-color;
+        margin: 0;
+    }
+    
+        &__prof {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }    
+    
+        &__img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        &__name {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            color: #292929;
+        }
+    
+        &__textarea {
+            border: none;
+            outline: none;
+        }
+    
+        &__btnsBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        &__cancel {
+            padding: 7px 16px 9px;
+            color: #292929;
+            font-size: 14px;
+            background-color: transparent;
+            border: none;
+            border-radius: 99em;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+    
+            &:hover {
+                background-color: rgb(199, 199, 199);
+            }
+        }
+    
+        &__Respond {
+            padding: 7px 16px 9px;
+            color: #fff;
+            font-size: 14px;
+            background-color: #1a8917;
+            border: 1px solid transparent;
+            border-radius: 99em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+    
+            &:hover {
+                background-color: #41c93c;
+            }
+        }
+    
+        &__B {
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            font-style: italic;
+            margin-right: 15px;
+        }
+}
+.right{
+   right: -480px;
+}
+.ofBox {
+    position: absolute;
+    width: 200px;
+    background-color: $white-color;
+    height: auto;
+    right: 0;
+    top: 400px;
+    z-index: 2000;
+    display: none;
+}
+.rightModal {
+    right: 0;
+    display: block;
+}
