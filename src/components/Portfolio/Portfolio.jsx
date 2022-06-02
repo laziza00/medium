@@ -1,5 +1,3 @@
-
-// import React from 'react'
 import HeroRight from '../Hero/HeroRight/HeroRight'
 import HeroSideBar from '../Hero/HeroSideBar/HeroSideBar'
 import './Portfolio.scss'

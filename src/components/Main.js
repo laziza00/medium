@@ -6,7 +6,6 @@ import React, {useState, useEffect} from 'react'
 
 function Main(props) {
 
-  // console.log(props);
   let [arr, setArr]= useState([])
 
   useEffect(()=> {

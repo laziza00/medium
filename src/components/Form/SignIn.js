@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import './Form.scss'
 import forumImg from '../../assets/images/logo.png'

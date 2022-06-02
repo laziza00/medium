@@ -5,7 +5,6 @@ import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom'
 import React, { useState } from 'react'
-// import ModalCheck from '../ModalCheck/ModalCheck';
 import obj from '../../Object'
 
 function SaveItems(props) {
@@ -29,7 +28,7 @@ function SaveItems(props) {
        <div className='saveIt'>
          <div className='saveIt'>
             <div>
-              
+
             </div>
          </div>
          {obj && obj.map((item, i)=> {
